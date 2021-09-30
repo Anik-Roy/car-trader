@@ -1,0 +1,30 @@
+{
+  "name": "car-trader",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "node ./database-test.js && next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.9.12",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "4.0.0-alpha.53",
+    "axios": "^0.19.2",
+    "formik": "^2.1.4",
+    "next": "11.1.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "sqlite": "4.0.7",
+    "sqlite3": "4.2.0",
+    "swr": "0.2.1"
+  },
+  "devDependencies": {
+    "@types/react": "17.0.21",
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.1.2",
+    "typescript": "4.4.3"
+  }
+}
