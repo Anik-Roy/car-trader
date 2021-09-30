@@ -76,7 +76,9 @@ export const MaterialUiLink = forwardRef<HTMLAnchorElement, MaterialUiLinkProps>
     >
         <a {...props} ref={ref}></a>
     </Link>
-))
+));
+
+MaterialUiLink.displayName="MaterialUiLink";
 
 // export function MaterialUiLink({ item, query, ...props }: MaterialUiLinkProps) {
 //     return (
