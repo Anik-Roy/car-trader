@@ -4,7 +4,7 @@ import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import ButtonBase from '@material-ui/core/ButtonBase';
-
+import Image from 'next/image'
 import { GetServerSideProps } from "next"
 import { CarModel } from "../../../../api/Car";
 import { openDB } from "../../../../openDB";
@@ -34,7 +34,7 @@ export default function CarDetails({ car }: CarDetailsProps) {
             <Paper className={classes.paper}>
                 <Grid container spacing={2}>
                     <Grid item xs={12} sm={6} md={5}>
-                        <img className={classes.img} alt="complex" src={car.photoUrl} />
+                        <Image className={classes.img} alt="complex" src={car.photoUrl} />
                     </Grid>
                     <Grid item xs={12} sm={6} md={7} container>
                         <Grid item xs container direction="column" spacing={2}>
