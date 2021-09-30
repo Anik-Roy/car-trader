@@ -38,7 +38,7 @@ export async function getPaginetedCars(query: ParsedUrlQuery) {
 
     console.log(totalRows);
     
-    return { cars, totalPages: Math.ceil(totalRows.count / rowsPerPage) };
+    return { cars, totalPages: Math.ceil(totalRows!.count / rowsPerPage) };
 }
 
 function getValueNumber(value: string | string[] | undefined | null) {
