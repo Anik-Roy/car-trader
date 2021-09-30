@@ -67,7 +67,7 @@ export interface MaterialUiLinkProps {
     query: ParsedUrlQuery;
 }
 
-const MaterialUiLink = forwardRef<HTMLAnchorElement, MaterialUiLinkProps>(({ item, query, ...props }, ref) => (
+export const MaterialUiLink = forwardRef<HTMLAnchorElement, MaterialUiLinkProps>(({ item, query, ...props }, ref) => (
     <Link
         href={{
             pathname: '/cars',
